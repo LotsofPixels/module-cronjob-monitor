@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="heartbeat">
+        <job name="cronmonitor_send_ping" instance="TinxIT\CronMonitor\Cron\SendPing" method="execute">
+            <config_path>cronjobmonitor/general/cron_schedule</config_path>
+        </job>
+    </group>
+</config>
